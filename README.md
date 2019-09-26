@@ -23,9 +23,12 @@ Simply run the following code in the browser:
 
 ```js
 var blindMode = document.createElement('script');
-blindMode.src = 'https://raw.githubusercontent.com/mshoho/blind-mode/master/drop-in/blind-mode.js';
+blindMode.src = 'https://cdn.jsdelivr.net/gh/mshoho/blind-mode@master/drop-in/blind-mode.js';
 document.body.appendChild(blindMode);
 ```
+
+**WARNING**: This will not work if you have strict [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) rules (and you probably should have them strict). In that case you need to put
+[blind-mode.js](https://raw.githubusercontent.com/mshoho/blind-mode/master/drop-in/blind-mode.js) somewhere to your application's assets and load it from there.
 
 ### NPM module
 
