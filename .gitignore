@@ -1,0 +1,15 @@
+*.log
+npm-debug.log*
+
+node_modules
+
+.npm
+
+*.user
+.vscode
+.DS_STORE
+.idea/*
+.vs
+
+/dist
+/.rts2*
